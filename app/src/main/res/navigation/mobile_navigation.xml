@@ -13,13 +13,19 @@
 
     <fragment
         android:id="@+id/nav_gallery"
-        android:name="com.example.recipedbnew.ui.gallery.GalleryFragment"
+        android:name="com.example.recipedbnew.ui.gallery.SearchFragment"
         android:label="@string/menu_search"
-        tools:layout="@layout/fragment_gallery" />
+        tools:layout="@layout/fragment_search" />
 
     <fragment
         android:id="@+id/nav_slideshow"
-        android:name="com.example.recipedbnew.ui.slideshow.SlideshowFragment"
+        android:name="com.example.recipedbnew.ui.slideshow.StatsFragment"
         android:label="@string/menu_statistics"
-        tools:layout="@layout/fragment_slideshow" />
+        tools:layout="@layout/fragment_stats" />
+
+    <fragment
+        android:id="@+id/nav_new"
+        android:name="com.example.recipedbnew.ui.contact.ContactFragment"
+        android:label="Contact Us"
+        tools:layout="@layout/fragment_contact" />
 </navigation>

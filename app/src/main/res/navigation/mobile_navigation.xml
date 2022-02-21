@@ -28,4 +28,10 @@
         android:name="com.example.recipedbnew.ui.contact.ContactFragment"
         android:label="Contact Us"
         tools:layout="@layout/fragment_contact" />
+
+    <fragment
+        android:id="@+id/nav_aboutus"
+        android:name="com.example.recipedbnew.ui.aboutus.FragmentaboutUs"
+        android:label="About Us"
+        tools:layout="@layout/fragment_aboutus" />
 </navigation>

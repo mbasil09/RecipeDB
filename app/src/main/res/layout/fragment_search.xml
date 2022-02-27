@@ -12,6 +12,91 @@
         android:layout_width="match_parent"
         android:layout_height="200dp">
 
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card1"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/layout_bg"
+
+            app:cardCornerRadius="20dp"
+            tools:context=".ui.home.HomeFragment">
+
+            <LinearLayout
+                android:id="@+id/cusine_layout"
+                android:layout_width="match_parent"
+
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Search by CUISINE"
+                    android:textSize="20dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:layout_editor_absoluteX="121dp"
+                    tools:layout_editor_absoluteY="87dp" />
+
+                <LinearLayout
+                    android:id="@+id/cusine_details"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="173dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Region">
+
+                    </TextView>
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                    </EditText>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Country">
+
+                    </TextView>
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                    </EditText>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Recipe Title">
+
+                    </TextView>
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                    </EditText>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="200dp"
@@ -19,6 +104,7 @@
             android:background="@drawable/layout_bg"
 
             tools:context=".ui.home.HomeFragment">
+
 
             <TextView
                 android:id="@+id/txt1"

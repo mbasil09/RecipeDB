@@ -1,10 +1,13 @@
 package com.example.recipedbnew;
 
 import android.os.Bundle;
+import android.transition.AutoTransition;
+import android.transition.TransitionManager;
 import android.util.Log;
 import android.view.View;
 import android.view.Menu;
 import android.view.WindowManager;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.google.android.material.snackbar.Snackbar;
@@ -25,8 +28,13 @@ public class MainActivity extends AppCompatActivity {
     private AppBarConfiguration mAppBarConfiguration;
     private ActivityMainBinding binding;
 
+//    LinearLayout cusine_layout;
+//    LinearLayout cusine_details;
+
 
     @Override
+
+
     protected void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
@@ -55,7 +63,20 @@ public class MainActivity extends AppCompatActivity {
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_main);
         NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
         NavigationUI.setupWithNavController(navigationView, navController);
+
+        // new
+//        cusine_layout=findViewById(R.id.cusine_layout);
+//        cusine_details=findViewById(R.id.cusine_details);
+
     }
+
+//    public void expand1(View view){
+//
+//        int v= (cusine_details.getVisibility()==View.GONE )? View.VISIBLE: View.GONE;
+//        TransitionManager.beginDelayedTransition(cusine_layout,new AutoTransition());
+//        cusine_details.setVisibility(v);
+
+//    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
